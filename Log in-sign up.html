@@ -2,29 +2,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page">
+    <nav class="navbar">
+        <div class="logo">MISR LEGACY</div>
+        <div class="nav-links">
+            <a href="Indexx.html">Home</a>
+            <a href="Searchh.html">Search</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Tickets.html">Tickets</a>
+            <a href="Contact.html">Contact us</a>
+            <a href="Artifact Details.html">Artifact Details</a>
+            <a href="Profile.html">Profile</a>
+        </div>
+        <div class="auth-buttons">
+         <a href="Log in-sign up.html" class="login-btn">LOGIN</a>
+        </div> <a href="Log in-sign up.html" class="signup-btn">SIGN UP</a>
+    </nav>
 
-    <div>
+    <div class="container">
 
-        <span>X</span>
+        <span class="close">X</span>
 
-        <div>
-            <button>Login</button>
-            <button>Sign Up</button>
+        <div class="switch">
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
         </div>
 
         <hr>
 
-        <div>
+        
+        <div class="card">
             <h2>Login</h2>
 
-            <form>
-                <label>Email Address:</label><br>
-                <input type="email" placeholder="your@email.com" required><br><br>
+            <form class="form">
+                <label>Email Address:</label>
+                <input type="email" placeholder="your@email.com" required>
 
-                <label>Password:</label><br>
-                <input type="password" placeholder="Enter password" minlength="8" maxlength="16" required><br><br>
+                <label>Password:</label>
+                <input type="password" placeholder="Enter password" minlength="8" maxlength="16" required>
 
                 <button type="submit">Login</button>
             </form>
@@ -32,21 +50,22 @@
 
         <hr>
 
-        <div>
+        
+        <div class="card">
             <h2>Sign Up</h2>
 
-            <form>
-                <label>Full Name:</label><br>
-                <input type="text" placeholder="Your full name" required><br><br>
+            <form class="form">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Your full name" required>
 
-                <label>Email Address:</label><br>
-                <input type="email" placeholder="your@email.com" required><br><br>
+                <label>Email Address:</label>
+                <input type="email" placeholder="your@email.com" required>
 
-                <label>Password:</label><br>
-                <input type="password" placeholder="Min. 8 characters" minlength="8" maxlength="16" required><br><br>
+                <label>Password:</label>
+                <input type="password" placeholder="Min. 8 characters" minlength="8" maxlength="16" required>
 
-                <label>Confirm Password:</label><br>
-                <input type="password" placeholder="Repeat password" minlength="8" maxlength="16" required><br><br>
+                <label>Confirm Password:</label>
+                <input type="password" placeholder="Repeat password" minlength="8" maxlength="16" required>
 
                 <button type="submit">Create Account</button>
             </form>
@@ -56,3 +75,5 @@
 
 </body>
 </html>
+
+login
