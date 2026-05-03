@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
     <!--LINKS-->
-<nav class="navbar">
+    <nav class="navbar">
     <div class="logo">MISR LEGACY</div>
     <div class="links">
         <a href="Indexx.html">Home</a>
@@ -25,13 +25,16 @@
 </nav>
 
     <br />
-    <hr>
+    <hr />
     <!-- PROFILE PICTURE -->
-    <div>
-      <img id="avatar-img" src="" alt="" />
+    <div class="avatar-section">
+      <img id="avatar-img" src="" alt="profile picture" />
       <div id="avatar-initials">PP</div>
       <br />
-      <label>Change Photo: <input type="file" accept="image/*" /></label>
+      <label
+        >Change Photo:
+        <input type="file" accept="image/*" onchange="inputAvatar(this)"
+      /></label>
     </div>
 
     <br />
@@ -50,10 +53,6 @@
           <td id="email"></td>
         </tr>
         <tr>
-          <td><b>City</b></td>
-          <td id="city"></td>
-        </tr>
-        <tr>
           <td><b>Gender</b></td>
           <td id="gender"></td>
         </tr>
@@ -67,69 +66,73 @@
         </tr>
       </table>
       <br />
-      <button>Edit Profile</button>
+      <button onclick="showEdit()">Edit Profile</button>
     </div>
 
     <!-- EDIT -->
-    <div id="edit-info">
+    <div id="edit-info" class="hidden">
       <h3>Edit Profile</h3>
       <table>
         <tr>
           <td><b>Name</b></td>
-          <td><input type="text" id="full-name" /></td>
+          <td><input type="text" id="e-name" /></td>
         </tr>
         <tr>
           <td><b>Email</b></td>
-          <td><input type="email" id="email" /></td>
-        </tr>
-        <tr>
-          <td><b>City</b></td>
-          <td><input type="text" id="city" /></td>
+          <td><input type="email" id="e-email" /></td>
         </tr>
         <tr>
           <td><b>Gender</b></td>
           <td>
-            <select id="gender">
-              <option>Male</option>
+            <select id="e-gender">
               <option>Female</option>
+              <option>Male</option>
               <option>Prefer not to say</option>
             </select>
           </td>
         </tr>
         <tr>
           <td><b>Nationality</b></td>
-          <td><input type="text" id="nationality" /></td>
+          <td>
+            <select id="e-nationality">
+              <option value="Egyptian">Egyptian</option>
+              <option value="Other">Other</option>
+            </select>
+          </td>
         </tr>
         <tr>
           <td><b>Date of Birth</b></td>
-          <td><input type="date" id="dob" /></td>
+          <td><input type="date" id="e-dob" /></td>
         </tr>
       </table>
       <br />
-      <button>Save</button>
+      <button onclick="saveInfo()">Save</button>
     </div>
 
     <hr />
 
     <!-- MY TICKETS -->
-    <h3>My Tickets</h3>
-    <table>
-      <tr>
-        <th>Monument</th>
-        <th>Date</th>
-        <th>Tickets</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      
-    </table>
+    <div>
+      <h3>My Tickets</h3>
+      <table>
+        <tr>
+          <th>Monument</th>
+          <th>Date</th>
+          <th>Tickets</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <script src="profile.js"></script>
   </body>
 </html>
+
