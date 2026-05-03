@@ -350,7 +350,7 @@ nav{
    border-radius: 8px;
     
  }
-  body{
+  .tickets-body{
   background-image: url("background.jpeg");
   background-size: cover;
   
