@@ -223,7 +223,6 @@ footer{
   color: white;
   text-align:center;
   padding: 4px;}
-/* بداية search */
 body {
             background-color: #050505;
             display: flex;
@@ -262,7 +261,7 @@ body {
             cursor: pointer;
             font-weight: bold;
         }
-/* بداية gallery */
+
 .gallery-page {
   background-color: #0d0b07;
   color: #c9982a;
@@ -341,9 +340,16 @@ body {
   line-height: 1.8;
   letter-spacing: 0.4px;
 }
-
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 15px 120px;
+    gap:20px;
+   background-color:black ;
+   border-radius: 8px;
+    
  }
-/* بداية tickets */
   .tickets-body{
   background-image: url("background.jpeg");
   background-size: cover;
@@ -385,7 +391,7 @@ body {
  table td{
     font-size: 20px;
  }
-/* بداية contact */
+
 .contact-page * {
     margin: 0;
     padding: 0;
@@ -491,7 +497,7 @@ body {
     border-top: 2px solid #d4af37;
 }
 
-/* بداية art */
+
 
 .page * {
     margin: 0;
@@ -929,7 +935,7 @@ body {
   padding: 0;
 }
 
-body {
+ .profile {
   background-image: url(image/profile-background.png);
   background-attachment: fixed;
   font-family: Georgia, serif;
@@ -986,7 +992,7 @@ hr {
 
 
 
-h3 {
+ .profile-title{
   font-size: 28px;
   margin-bottom: 16px;
   text-align: center;
@@ -997,7 +1003,7 @@ h3 {
 
 
 
-table {
+.info-table {
   margin: auto;
   width: 50%;
   max-width: 400px;
@@ -1005,26 +1011,16 @@ table {
   background-color: #fdf8f2c6;
 }
 
-table td {
+.info-table td {
   padding: 10px;
   border: 1px solid black;
   font-size: 17px;
 }
 
-table td:first-child {
+.info-table td:first-child {
   background-color: #e1d5acb4;
   font-weight: bold;
   width: 150px;
-  color: #5a3e28;
-}
-
-
-table th {
-  background-color: #e1d5acb4;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px 14px;
-  border: 1px solid black;
   color: #5a3e28;
 }
 
@@ -1051,7 +1047,7 @@ select:focus {
 
 
 
-button {
+.btn-profile {
   padding: 7px 16px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1063,7 +1059,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn-profile:hover {
   background-color: rgba(0, 0, 0, 0.299);
   color: #fff;
 }
