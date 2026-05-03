@@ -1,0 +1,78 @@
+.gallery-page {
+  background-color: #0d0b07;
+  color: #c9982a;
+  margin: 0;
+  padding: 20px;
+}
+.gallery-page .nav-links {
+  background-color: #1a1208;
+  padding: 14px 20px;
+  text-align: center;
+  border-bottom: 2px solid #c9982a;
+  margin-bottom: 30px;
+}
+.gallery-page .nav-links a {
+  font-family: 'Uncial Antiqua', serif;
+  color: #e0b84a;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.gallery-page .nav-links a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #e0b84a;
+}
+.gallery-page h1 {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 26px;
+  color: #e0b84a;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.gallery-page .divider {
+  font-size: 20px;
+  color: #c9982a;
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+}
+.gallery-page table {
+  border-collapse: separate;
+  border-spacing: 16px;
+}
+.gallery-page td {
+  vertical-align: top;
+}
+.gallery-page figure {
+  margin: 0;
+  border: 2px solid #c9982a;
+  background-color: #1a1208;
+  padding: 6px;
+}
+.gallery-page figure img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+.gallery-page figcaption {
+  padding: 10px 12px;
+  background-color: #1a1208;
+}
+.gallery-page .caption-title {
+  display: block;
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 13px;
+  color: #e0b84a;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+.gallery-page .caption-desc {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #a07830;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
