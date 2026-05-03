@@ -391,3 +391,232 @@ nav{
  table td{
     font-size: 20px;
  }
+/* كود contact css */
+
+.contact-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contact-page {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+    color: #f5f5f5;
+}
+
+
+.contact-header {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: #d4af37; 
+    border-bottom: 2px solid #d4af37;
+}
+
+.contact-header h1 {
+    margin-bottom: 10px;
+}
+
+
+.contact-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+.contact-card {
+    background: #111;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+
+.contact-card h2 {
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #f5f5f5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #1c1c1c;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+    box-shadow: 0 0 5px #d4af37;
+}
+
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #b8962e;
+}
+
+
+.contact-footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: #d4af37;
+    margin-top: 20px;
+    border-top: 2px solid #d4af37;
+}
+
+/* كود ال sign up css */
+
+.page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 400px;
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    position: relative;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #d4af37;
+    cursor: pointer;
+}
+
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 48%;
+    padding: 10px;
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: black;
+}
+
+
+.card h2 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #1c1c1c;
+    color: white;
+}
+
+.form input:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background: #b8962e;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
