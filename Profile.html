@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Profile</title>
-   <link rel="stylesheet" href="styleee.css">
+    <link rel="stylesheet" href="profile.css" />
   </head>
-  <body>
-   
+  <body class="profile">
+    <!--LINKS-->
     <nav class="navbar">
-    <div class="logo">MISR LEGACY</div>
-    <div class="links">
+      <div class="logo">MISR LEGACY</div>
+      <div class="links">
         <a href="Indexx.html">Home</a>
         <a href="Searchh.html">Search</a>
         <a href="Gallery.html">Gallery</a>
@@ -17,16 +17,16 @@
         <a href="Contact.html">Contact us</a>
         <a href="Artifact Details.html">Artifact Details</a>
         <a href="Profile.html">Profile</a>
-    </div>
-    <div class="auth-buttons">
+      </div>
+      <div class="auth-buttons">
         <a href="Log in-sign up.html" class="btn-login">LOGIN</a>
         <a href="Log in-sign up.html" class="btn-signup">SIGN UP</a>
-    </div>
-</nav>
+      </div>
+    </nav>
 
     <br />
     <hr />
-
+    <!-- PROFILE PICTURE -->
     <div class="avatar-section">
       <img id="avatar-img" src="" alt="profile picture" />
       <div id="avatar-initials">PP</div>
@@ -40,9 +40,10 @@
     <br />
     <hr />
 
+    <!-- VIEW  -->
     <div id="view-info">
-      <h3>My Profile</h3>
-      <table>
+      <h3 class="profile-title">My Profile</h3>
+      <table class="info-table">
         <tr>
           <td><b>Name</b></td>
           <td id="full-name"></td>
@@ -65,13 +66,13 @@
         </tr>
       </table>
       <br />
-      <button onclick="showEdit()">Edit Profile</button>
+      <button class="btn-profile" onclick="showEdit()">Edit Profile</button>
     </div>
 
- 
+    <!-- EDIT -->
     <div id="edit-info" class="hidden">
-      <h3>Edit Profile</h3>
-      <table>
+      <h3 class="profile-title">Edit Profile</h3>
+      <table class="info-table">
         <tr>
           <td><b>Name</b></td>
           <td><input type="text" id="e-name" /></td>
@@ -105,32 +106,10 @@
         </tr>
       </table>
       <br />
-      <button onclick="saveInfo()">Save</button>
-    </div>
-
-    <hr />
-
-    <div>
-      <h3>My Tickets</h3>
-      <table>
-        <tr>
-          <th>Monument</th>
-          <th>Date</th>
-          <th>Tickets</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+      <button class="btn-profile" onclick="saveInfo()">Save</button>
     </div>
     <script src="profile.js"></script>
   </body>
 </html>
+
 
