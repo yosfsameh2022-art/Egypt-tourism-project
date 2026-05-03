@@ -223,6 +223,7 @@ footer{
   color: white;
   text-align:center;
   padding: 4px;}
+/* بداية search */
 body {
             background-color: #050505;
             display: flex;
@@ -261,7 +262,7 @@ body {
             cursor: pointer;
             font-weight: bold;
         }
-
+/* بداية gallery */
 .gallery-page {
   background-color: #0d0b07;
   color: #c9982a;
@@ -340,16 +341,9 @@ body {
   line-height: 1.8;
   letter-spacing: 0.4px;
 }
-nav{
-    display: flex;
-    text-align: center;
-    justify-content: flex-start;
-    padding: 15px 120px;
-    gap:20px;
-   background-color:black ;
-   border-radius: 8px;
-    
+
  }
+/* بداية tickets */
   .tickets-body{
   background-image: url("background.jpeg");
   background-size: cover;
@@ -391,7 +385,7 @@ nav{
  table td{
     font-size: 20px;
  }
-
+/* بداية contact */
 .contact-page * {
     margin: 0;
     padding: 0;
@@ -497,7 +491,7 @@ nav{
     border-top: 2px solid #d4af37;
 }
 
-
+/* بداية art */
 
 .page * {
     margin: 0;
