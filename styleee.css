@@ -224,7 +224,7 @@ footer{
   text-align:center;
   padding: 4px;}
 /* بداية search */
-body {
+.search-body {
             background-color: #050505;
             display: flex;
             justify-content: center;
