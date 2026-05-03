@@ -625,7 +625,7 @@ body {
       --border-color: rgba(201,168,76,0.2);
     }
 
-    body { 
+    .Artifact-body { 
       background: var(--dark); 
       color: var(--text); 
       font-family: 'Inter', sans-serif; }
