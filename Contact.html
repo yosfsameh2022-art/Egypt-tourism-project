@@ -5,25 +5,10 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styleee.css">
 </head>
+
 <body class="contact-page">
-    <nav class="navbar">
-        <div class="logo">MISR LEGACY</div>
-   <nav class="navbar">
-    <div class="logo">MISR LEGACY</div>
-    <div class="links">
-        <a href="Indexx.html">Home</a>
-        <a href="Searchh.html">Search</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="Tickets.html">Tickets</a>
-        <a href="Contact.html">Contact us</a>
-        <a href="Artifact Details.html">Artifact Details</a>
-        <a href="Profile.html">Profile</a>
-    </div>
-    <div class="auth-buttons">
-        <a href="Log in-sign up.html" class="btn-login">LOGIN</a>
-        <a href="Log in-sign up.html" class="btn-signup">SIGN UP</a>
-    </div>
-</nav>
+    
+
     <header class="contact-header">
         <h1>Contact Us</h1>
         <p>Get in touch with us</p>
@@ -68,7 +53,23 @@
         <p>© 2026 Your Website</p>
     </footer>
 
+    <script>
+    document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if(name === "" || email === "") {
+        alert("Please fill all fields!");
+        return;
+    }
+
+    alert("Message sent successfully!");
+
+    this.reset();
+    });
+    </script>
+
 </body>
 </html>
-
-contact us
