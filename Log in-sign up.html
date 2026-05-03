@@ -2,25 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Login-Sign Up</title>
+    <title>Log in-sign Up</title>
     <link rel="stylesheet" href="styleee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
+
+
+
 <body class="page">
-    <nav class="navbar">
-        <div class="logo">MISR LEGACY</div>
-        <div class="links">
-            <a href="Indexx.html">Home</a>
-            <a href="Searchh.html">Search</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Tickets.html">Tickets</a>
-            <a href="Contact.html">Contact us</a>
-            <a href="Artifact Details.html">Artifact Details</a>
-            <a href="Profile.html">Profile</a>
-        </div>
-        <div class="auth-buttons">
-         <a href="Log in-sign up.html" class="login-btn">LOGIN</a>
-        </div> <a href="Log in-sign up.html" class="signup-btn">SIGN UP</a>
-    </nav>
+    
 
     <div class="container">
 
@@ -42,7 +33,12 @@
                 <input type="email" placeholder="your@email.com" required>
 
                 <label>Password:</label>
-                <input type="password" placeholder="Enter password" minlength="8" maxlength="16" required>
+                <div class="password-box">
+                    <input type="password" id="loginPassword" placeholder="Enter password" required>
+                    <span class="toggle" onclick="togglePassword('loginPassword', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
 
                 <button type="submit">Login</button>
             </form>
@@ -67,13 +63,97 @@
                 <label>Confirm Password:</label>
                 <input type="password" placeholder="Repeat password" minlength="8" maxlength="16" required>
 
+                <label>Password:</label>
+                <div class="password-box">
+                    <input type="password" id="signupPassword" placeholder="Min. 8 characters" required>
+                    <span class="toggle" onclick="togglePassword('loginPassword', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <label>Confirm Password:</label>
+                <div class="password-box">
+                    <input type="password" id="confirmPassword" placeholder="Repeat password" required>
+                    <span class="toggle" onclick="togglePassword('loginPassword', this)">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
                 <button type="submit">Create Account</button>
             </form>
         </div>
 
     </div>
 
+    <script>
+    
+    let loginBtn = document.querySelectorAll(".btn")[0];
+    let signupBtn = document.querySelectorAll(".btn")[1];
+
+    let loginCard = document.querySelectorAll(".card")[0];
+    let signupCard = document.querySelectorAll(".card")[1];
+
+    signupCard.style.display = "none";
+
+    loginBtn.onclick = function() {
+        loginCard.style.display = "block";
+        signupCard.style.display = "none";
+    };
+
+    signupBtn.onclick = function() {
+        loginCard.style.display = "none";
+        signupCard.style.display = "block";
+    };
+
+
+    let loginForm = loginCard.querySelector("form");
+    loginForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Logged in successfully!");
+        this.reset();
+    });
+
+
+    let signupForm = signupCard.querySelector("form");
+
+    signupForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let password = signupForm.querySelectorAll("input")[2].value;
+        let confirm = signupForm.querySelectorAll("input")[3].value;
+
+        if(password !== confirm) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        alert("Account created successfully!");
+        this.reset();
+        });
+
+
+        document.querySelector(".close").onclick = function() {
+        document.querySelector(".container").style.display = "none";
+        };
+
+
+        function togglePassword(id, element) {
+            let input = document.getElementById(id);
+            let icon = element.querySelector("i");
+
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } 
+            else {
+                input.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+            }
+        </script>
+        
+
 </body>
 </html>
-
-login
