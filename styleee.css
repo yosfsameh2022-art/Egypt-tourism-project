@@ -929,7 +929,7 @@ body {
   padding: 0;
 }
 
-body {
+.profile{
   background-image: url(image/profile-background.png);
   background-attachment: fixed;
   font-family: Georgia, serif;
